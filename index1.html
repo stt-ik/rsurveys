@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=uft-8"/>
+        <title>redirect</title>
+    </head>
+    
+    <body>
+        <script>
+            var urls =[
+                'https://forms.gle/3vCGYyWFx4oeXFq26', 
+                'https://forms.gle/nsUjMY5EptVhoXfZ6',
+                'https://forms.gle/GTsXPBciiPzTeEzu5', 
+                'https://forms.gle/FgA1R8WfBgU6t4rN8',
+                'https://forms.gle/89FB32hD2ymzJFAWA',
+                'https://forms.gle/aP5KP6bxjTYL7ygc6',
+                'https://forms.gle/jKGLPVP12iYJwRLK9',
+                'https://forms.gle/22FNbvLBr372Vsys7'
+            ];
+            var min = 0;
+            var max = urls.length - 1;
+            if (max==0){
+                window.location.href='https://www.google.com'
+            }
+            else{
+                var random = Math.floor(Math.random() * (max - min + 1)) + min;
+                window.location.href=urls[random];
+            }
+        </script>
+    </body>
+</html>
+
